@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import FormLogic from "./formLogic";
 import Validation from "./formValidation";
@@ -12,12 +12,6 @@ const Form = () => {
     history.push("/profile", {useremail:inputValues.useremail,userpassword:inputValues.userpassword});
   };
 
-  // const formSubmitted = () => {
-  //   history.push({
-  //     pathname: '/profile',
-  //     state: inputValues
-  //    });
-  // };
 
   const { handleInput, inputValues, handleSubmit, errors } = FormLogic(
     formSubmitted,

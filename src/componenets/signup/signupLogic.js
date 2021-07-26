@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ServerReq from "../../serverRequests";
+const serverReq = require("../../serverRequests");
 
 const FormLogic = (formSubmitted, validationForm) => {
   const [inputValues, setInputValues] = useState({
@@ -7,7 +7,6 @@ const FormLogic = (formSubmitted, validationForm) => {
     userpassword: "",
     userpasswordconfirmation: "",
   });
-  const serverReq = new ServerReq();
 
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -26,6 +25,7 @@ const FormLogic = (formSubmitted, validationForm) => {
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmitted) {
+      console.log(serverReq);
       serverReq.saveUser({
         useremail: inputValues.useremail,
         userpassword: inputValues.userpassword,

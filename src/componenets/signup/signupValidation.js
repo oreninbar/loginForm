@@ -1,7 +1,6 @@
-import ServerReq from "../../serverRequests";
+import {getUser} from "../../serverRequests";
 
 export default async function validation(values) {
-  let serverReq = new ServerReq();
   let errors = {};
   let regexEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   let regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$/;
@@ -12,7 +11,7 @@ export default async function validation(values) {
   } else if (!regexEmail.test(values.useremail)) {
     errors.useremail = "Email address is invalid";
   } else {
-    let tempUser = await serverReq.getUser(values.useremail);
+    let tempUser = await getUser(values.useremail);
     if (tempUser && tempUser.useremail === values.useremail) {
       errors.useremail =
         "Email address already exist, login with the exists email or change email";
