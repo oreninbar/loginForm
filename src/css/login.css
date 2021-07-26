@@ -1,0 +1,143 @@
+@use '../abstract/colors';
+.form-container {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-container .cancel-link {
+  margin-top: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #1944d1;
+  cursor: pointer;
+}
+
+.form-wrapper {
+  max-height: 70%;
+  min-height: 60%;
+  width: 500px;
+  max-width: 60rem;
+  min-width: 34rem;
+  border: 0.2rem solid #e9e4e4;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.form-wrapper .form-title {
+  margin: 0.3rem;
+  font-size: 2.5rem;
+}
+
+.form-wrapper .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+  height: 70%;
+  width: 90%;
+  min-width: 30rem;
+}
+
+.form-wrapper .form .form-label {
+  width: 100%;
+  text-align: start;
+}
+
+.form-wrapper .form .form-input {
+  border: 0.2rem solid #e9e4e4;
+  border-radius: 0.4rem;
+  margin: 0.5rem;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.3rem;
+}
+
+.form-wrapper .form .form-input-btn {
+  width: 100%;
+  height: 3rem;
+  margin-top: 0.6rem;
+  background-color: #3cb2da;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.form-wrapper .form .form-input-btn .login-send {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.form-wrapper .form .error-message {
+  font-size: 1.1rem;
+  text-align: start;
+  width: 100%;
+  color: red;
+  margin: .5rem .5rem;
+}
+
+.form-wrapper .forgot-password {
+  position: relative;
+  color: blue;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.form-wrapper .need-an-account {
+  font-size: 1.3rem;
+}
+
+.form-wrapper .sign-up {
+  color: blue;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+/*# sourceMappingURL=login.css.map */
